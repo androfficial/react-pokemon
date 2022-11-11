@@ -1,5 +1,5 @@
 import { Skeleton } from '@mui/material';
-import { FC, Key } from 'react';
+import { FC } from 'react';
 
 interface ICSkeleton {
   animation?: 'pulse' | 'wave' | false;
