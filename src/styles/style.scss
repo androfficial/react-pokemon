@@ -1,0 +1,30 @@
+@import 'variables';
+@import 'null';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: var(--font-family-primary);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-primary);
+  background-color: #fbab7e;
+  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.page {
+  flex: 1 1 auto;
+}
+
+.container {
+  padding: 0 16px;
+}
