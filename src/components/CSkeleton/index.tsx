@@ -2,7 +2,6 @@ import { Skeleton } from '@mui/material';
 import { FC, Key } from 'react';
 
 interface ICSkeleton {
-  key?: Key;
   animation?: 'pulse' | 'wave' | false;
   variant?: 'circular' | 'rectangular' | 'rounded' | 'text';
   width?: number | string;
@@ -10,7 +9,6 @@ interface ICSkeleton {
 }
 
 export const CSkeleton: FC<ICSkeleton> = ({
-  key,
   animation = 'wave',
   variant = 'rounded',
   width = '100%',
@@ -18,7 +16,6 @@ export const CSkeleton: FC<ICSkeleton> = ({
 }) => {
   return (
     <Skeleton
-      key={key}
       animation={animation}
       variant={variant}
       width={width}
