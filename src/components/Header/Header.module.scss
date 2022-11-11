@@ -1,7 +1,11 @@
 .header {
-  background-color: #ffe53b;
-  background-image: linear-gradient(147deg, #ffe53b 0%, #ff2525 74%);
-  box-shadow: 0 6px 10px -9px #000;
+  background-color: var(--color-bg-tertiary);
+  background-image: linear-gradient(
+    147deg,
+    var(--color-bg-tertiary) 0%,
+    var(--color-bg-fourth) 74%
+  );
+  box-shadow: 0 6px 10px -9px var(--color-primary);
 }
 
 .inner {
@@ -11,5 +15,6 @@
   height: 48px;
   padding: 5px 0;
   font-weight: 500;
+  color: var(--color-secondary);
   text-align: center;
 }

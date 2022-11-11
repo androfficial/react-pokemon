@@ -8,8 +8,12 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: var(--color-primary);
-  background-color: #fbab7e;
-  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+  background-color: var(--color-bg-main);
+  background-image: linear-gradient(
+    62deg,
+    var(--color-bg-main) 0%,
+    var(--color-bg-secondary) 100%
+  );
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
