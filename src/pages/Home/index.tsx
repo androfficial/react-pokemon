@@ -92,7 +92,7 @@ export const Home = () => {
             handleTypeChange={handleTypeChange}
           />
           {isSuccess ? (
-            searchValue && filteredPokemons.length === 0 ? (
+            (searchValue || type !== 'All') && filteredPokemons.length === 0 ? (
               <p className={s.nothFound}>Nothing found</p>
             ) : (
               <PokemonsList
