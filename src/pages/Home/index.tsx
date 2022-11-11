@@ -92,14 +92,18 @@ export const Home = () => {
             handleTypeChange={handleTypeChange}
           />
           {isSuccess ? (
-            <PokemonsList
-              filteredPokemons={filteredPokemons}
-              limit={limit}
-              type={type}
-              isLoading={isLoading}
-              searchValue={searchValue}
-              spanRef={ref}
-            />
+            searchValue && filteredPokemons.length === 0 ? (
+              <p className={s.nothFound}>Nothing found</p>
+            ) : (
+              <PokemonsList
+                filteredPokemons={filteredPokemons}
+                limit={limit}
+                type={type}
+                isLoading={isLoading}
+                searchValue={searchValue}
+                spanRef={ref}
+              />
+            )
           ) : (
             <div className={s.list}>
               <Placeholder limit={limit} />

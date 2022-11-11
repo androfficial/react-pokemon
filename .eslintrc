@@ -40,6 +40,7 @@
     "react/no-unescaped-entities": "off",
     "prettier/prettier": ["warn", { "singleQuote": true }],
     "no-shadow": "off",
+    "no-nested-ternary": "off",
     "camelcase": "off",
     "@typescript-eslint/camelcase": "off",
     "@typescript-eslint/naming-convention": "off",
